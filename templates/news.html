@@ -1,0 +1,19 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Newsfeed</title>
+</head>
+<body>
+<h1>News</h1>
+<ul>
+{% for article in articles %}
+<li><a href="{{ article['url'] }}">{{ article['title'] }}</a></li>
+{% endfor %}
+</ul>
+</body>
+</html>
+
+
+All the variable references in the HTML files are valid.
